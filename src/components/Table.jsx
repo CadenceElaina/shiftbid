@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import shiftsData from "../data";
+
 const Table = () => {
   const [shifts, setShifts] = useState([]);
   //const [newShift, setNewShift] = useState("");
@@ -48,7 +49,7 @@ const Table = () => {
   };
   console.log(shifts);
   return (
-    <div>
+    <div className="table-wrapper">
       {shifts.length > 0 ? (
         <table>
           <tbody>
